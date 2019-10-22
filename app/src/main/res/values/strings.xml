@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Remit Online</string>
+    <string name="ques">You need to answer some Questions that appear on the Screen one by one. You need to click NEXT to move to next Question.</string>
+    <string name="ques1">What is your name?</string>
+    <string name="ques2">What is your age?</string>
+    <string name="ques3">What is your city?</string>
+    <string name="ques4">What is the number on the screen 11243?</string>
+    <string name="endKYC">Thanks for participating in KYC Process.</string>
+</resources>
