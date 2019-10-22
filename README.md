@@ -26,7 +26,7 @@ Visit Demo Zone (https://portal.enablex.io/demo-zone/) to request a Guided Demo 
 
 #### 2.1.2 Sample Android Client 
 
-* Clone or download this Repository [https://github.com/EnableX/One-to-One-Video-Call-Webrtc-Application-Sample-for-Android.git] 
+* Clone or download this Repository [https://github.com/EnableX/Video-KYC-Application-Sample-for-Android.git] 
 
 
 #### 2.1.3 Sample App Server 
