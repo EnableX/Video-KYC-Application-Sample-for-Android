@@ -52,17 +52,17 @@ meeting rooms. API Access is given to each Application through the assigned App 
 are to be used as Username and Password respectively to pass as HTTP Basic Authentication header to access Server API.
  
 For this application, the following Server API calls are used: 
-* https://api.enablex.io/v1/rooms - To create new room
-* https://api.enablex.io/v1/rooms/:roomId - To get information of a given Room
-* https://api.enablex.io/v1/rooms/:roomId/tokens - To create Token for a given Room to get into a RTC Session
+* https://developer.enablex.io/latest/server-api/rooms-route/#get-rooms - To get list of Rooms
+* https://developer.enablex.io/latest/server-api/rooms-route/#get-room-info - To get information of the given Room
+* https://developer.enablex.io/latest/server-api/rooms-route/#create-token - To create Token for the given Room
 
 To know more about Server API, go to:
-https://developer.enablex.io/api/server-api/
+https://developer.enablex.io/latest/server-api/
 
 
 ## 4 Android Toolkit
 
 Android App to use Android Toolkit to communicate with EnableX Servers to initiate and manage Real Time Communications.  
 
-* Documentation: https://developer.enablex.io/api/client-api/android-toolkit/
-* Download: https://developer.enablex.io/wp-content/uploads/EnxRtcAndroid-release_0.9.2.aar
+* Documentation: https://developer.enablex.io/latest/client-api/android-toolkit/
+* Download: https://developer.enablex.io/wp-content/uploads/Android_SDK_1.5.1/EnxRtcAndroid-release_1.5.1.zip
