@@ -178,8 +178,13 @@ public class VideoConfActivity extends AppCompatActivity implements EnxRoomObser
     }
 
     @Override
-    public void onReceivedChatDataAtRoom(JSONObject jsonObject) {
+    public void onMessageReceived(JSONObject jsonObject) {
 // received when chat data received at room
+    }
+
+    @Override
+    public void onUserDataReceived(JSONObject jsonObject) {
+
     }
 
     @Override
