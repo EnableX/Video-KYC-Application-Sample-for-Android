@@ -72,6 +72,10 @@ public class WebCall extends AsyncTask<Void, Void, String> {
             httpURLConnection.setDoInput(true);
             httpURLConnection.setDoOutput(true);
             httpURLConnection.setRequestProperty("Content-Type", "application/json");
+            if(WebConstants.kTry){
+                httpURLConnection.setRequestProperty("x-app-id", WebConstants.kAppId);
+                httpURLConnection.setRequestProperty("x-app-key", WebConstants.kAppkey);
+            }
             httpURLConnection.connect();
             OutputStream os = httpURLConnection.getOutputStream();
             if (object != null) {
