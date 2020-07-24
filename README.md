@@ -72,6 +72,8 @@ Once you tried EnableX Android Sample Application, you may need to setup your ow
   * Once the Room Id is created, you can use it and share with others to connect to the Virtual Room to carry out a RTC Session either as a Moderator or a Participant (Choose applicable Role in the Form).
 
   Note: Only one user with Moderator Role allowed to connect to a Virtual Room while trying with EnableX Hosted Service. Your Own Application Server may allow upto 5 Moderators.
+  
+  Note:- If you used any emulator/simulator your local stream will not create. It will create only on real device.
     
 ## 2 Setup Your Own Application Server
 
