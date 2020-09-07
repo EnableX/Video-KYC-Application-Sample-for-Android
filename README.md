@@ -100,6 +100,5 @@ This Sample Applcation uses EnableX Android Toolkit to communicate with EnableX 
 
 EnableX provides hosted Vemo Application of different use-case for you to try out.
 
-1. Try a quick Video Call: https://demo.enablex.io/
-2. Try Apps on Demo Zone: https://portal.enablex.io/demo-zone/
+1. Try a quick Video Call: https://try.enablex.io/
 3. Try Meeting & Webinar:  https://www.enablex.io/ucaas/
