@@ -9,9 +9,11 @@ This basic Video KYC Application is developed using Android (The EnableX Android
 >The details of the supported set of web browsers can be found here:
 https://developer.enablex.io/release-notes/#cross-compatibility
 
-## 1. Trial
+## 1. Demo
 
-Sign up for a free trial https://portal.enablex.io/cpaas/trial-sign-up/ or try our multiparty video chat https://try.enablex.io/.
+Visit Demo Zone (https://portal.enablex.io/demo-zone/) to request a Guided Demo or Demo Access to different type of application available there.
+
+You may also try our Video Meeting and Webinar solutions here: https://enablex.io/vcfree
 
 ## 2. Installation
 
@@ -19,7 +21,7 @@ Sign up for a free trial https://portal.enablex.io/cpaas/trial-sign-up/ or try o
 
 #### 1.1.1 App Id and App Key 
 
-* Register with EnableX [https://portal.enablex.io/cpaas/trial-sign-up/] 
+* Register with EnableX [https://www.enablex.io] 
 * Login to the EnableX Portal
 * Create your Application Key
 * Get your App ID and App Key delivered to your Email
@@ -100,5 +102,6 @@ This Sample Applcation uses EnableX Android Toolkit to communicate with EnableX 
 
 EnableX provides hosted Vemo Application of different use-case for you to try out.
 
-1. Try a quick Video Call: https://try.enablex.io/
+1. Try a quick Video Call: https://demo.enablex.io/
+2. Try Apps on Demo Zone: https://portal.enablex.io/demo-zone/
 3. Try Meeting & Webinar:  https://www.enablex.io/ucaas/

@@ -25,6 +25,7 @@ import com.enablex.remitonline.webcommunication.WebCall;
 import com.enablex.remitonline.webcommunication.WebConstants;
 import com.enablex.remitonline.webcommunication.WebResponse;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -294,7 +295,7 @@ public class VideoConfActivity extends AppCompatActivity implements EnxRoomObser
     private void initialize() {
         setView();
         enxRtc = new EnxRtc(this, this, this);
-        localStream = enxRtc.joinRoom(token, getPublisherInfo(), getReconnectInfo(),null);
+        localStream = enxRtc.joinRoom(token, getPublisherInfo(), getReconnectInfo(),new JSONArray());
         quesTV.setText("Please wait.....");
     }
 
@@ -315,11 +316,9 @@ public class VideoConfActivity extends AppCompatActivity implements EnxRoomObser
             jsonObject.put("audio", true);
             jsonObject.put("video", true);
             jsonObject.put("data", true);
-            jsonObject.put("maxVideoBW", 1500);
-            jsonObject.put("minVideoBW", 150);
             JSONObject videoSize = new JSONObject();
-            videoSize.put("minWidth", 720);
-            videoSize.put("minHeight", 480);
+            videoSize.put("minWidth", 320);
+            videoSize.put("minHeight", 180);
             videoSize.put("maxWidth", 1280);
             videoSize.put("maxHeight", 720);
             jsonObject.put("videoSize", videoSize);
