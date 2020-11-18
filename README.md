@@ -9,11 +9,9 @@ This basic Video KYC Application is developed using Android (The EnableX Android
 >The details of the supported set of web browsers can be found here:
 https://developer.enablex.io/release-notes/#cross-compatibility
 
-## 1. Demo
+## 1. Trial
 
-Visit Demo Zone (https://portal.enablex.io/demo-zone/) to request a Guided Demo or Demo Access to different type of application available there.
-
-You may also try our Video Meeting and Webinar solutions here: https://enablex.io/vcfree
+Sign up for a free trial https://portal.enablex.io/cpaas/trial-sign-up/ or try our multiparty video chat https://try.enablex.io/.
 
 ## 2. Installation
 
