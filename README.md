@@ -1,6 +1,6 @@
 # Video KYC: A Sample Android App with EnableX Android Toolkit
 
-This is a Sample Android App demonstrates the use of EnableX (https://www.enablex.io) platform Server APIs and Android Toolkit to build 1-to-1 RTC (Real Time Communication) Application.  It allows developers to ramp up on app development by hosting on their own devices. 
+This is a Sample Android App demonstrates the use of EnableX platform (https://www.enablex.io/cpaas/) Server APIs and Android Toolkit to build 1-to-1 RTC (Real Time Communication) Application.  It allows developers to ramp up on app development by hosting on their own devices. 
 
 > EnableX Developer Center: https://developer.enablex.io/
 
@@ -19,7 +19,7 @@ Sign up for a free trial https://portal.enablex.io/cpaas/trial-sign-up/ or try o
 
 #### 1.1.1 App Id and App Key 
 
-* Register with EnableX [https://www.enablex.io] 
+* Register with EnableX [https://portal.enablex.io/cpaas/trial-sign-up/] 
 * Login to the EnableX Portal
 * Create your Application Key
 * Get your App ID and App Key delivered to your Email
