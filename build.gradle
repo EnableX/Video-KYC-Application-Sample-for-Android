@@ -17,6 +17,9 @@ buildscript {
 
 allprojects {
     repositories {
+        flatDir {
+            dirs 'src/main/libs'
+        }
         google()
         jcenter()
         maven { url  "https://dl.bintray.com/enablex/maven"}

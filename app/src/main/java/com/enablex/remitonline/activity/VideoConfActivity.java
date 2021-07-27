@@ -265,6 +265,46 @@ public class VideoConfActivity extends AppCompatActivity implements EnxRoomObser
     }
 
     @Override
+    public void onRoomAwaited(EnxRoom enxRoom, JSONObject jsonObject) {
+
+    }
+
+    @Override
+    public void onUserAwaited(JSONObject jsonObject) {
+
+    }
+
+    @Override
+    public void onAckForApproveAwaitedUser(JSONObject jsonObject) {
+
+    }
+
+    @Override
+    public void onAckForDenyAwaitedUser(JSONObject jsonObject) {
+
+    }
+
+    @Override
+    public void onAckAddSpotlightUsers(JSONObject jsonObject) {
+
+    }
+
+    @Override
+    public void onAckRemoveSpotlightUsers(JSONObject jsonObject) {
+
+    }
+
+    @Override
+    public void onUpdateSpotlightUsers(JSONObject jsonObject) {
+
+    }
+
+    @Override
+    public void onRoomBandwidthAlert(JSONObject jsonObject) {
+
+    }
+
+    @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         switch (requestCode) {
