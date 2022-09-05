@@ -7,10 +7,6 @@ import android.graphics.Bitmap;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.core.app.ActivityCompat;
-import androidx.appcompat.app.AppCompatActivity;
 import android.util.Base64;
 import android.util.Log;
 import android.view.Menu;
@@ -19,6 +15,11 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import com.enablex.remitonline.R;
 import com.enablex.remitonline.webcommunication.WebCall;
@@ -42,6 +43,13 @@ import enx_rtc_android.Controller.EnxStreamObserver;
 import enx_rtc_android.Controller.EnxUtils;
 
 public class VideoConfActivity extends AppCompatActivity implements EnxRoomObserver, EnxStreamObserver, View.OnClickListener, EnxScreenShotObserver, WebResponse, EnxReconnectObserver {
+    String roomId;
+    String[] PERMISSIONS = {
+            android.Manifest.permission.CAMERA,
+            android.Manifest.permission.READ_EXTERNAL_STORAGE,
+            android.Manifest.permission.WRITE_EXTERNAL_STORAGE,
+            android.Manifest.permission.RECORD_AUDIO
+    };
     private String token;
     private String name;
     private FrameLayout selfFL;
@@ -50,17 +58,9 @@ public class VideoConfActivity extends AppCompatActivity implements EnxRoomObser
     private EnxRtc enxRtc;
     private EnxRoom mEnxRoom;
     private EnxStream localStream;
-    private int PERMISSION_ALL = 1;
+    private final int PERMISSION_ALL = 1;
     private EnxPlayerView enxPlayerView;
     private int count = 0;
-    String roomId;
-    String[] PERMISSIONS = {
-            android.Manifest.permission.CAMERA,
-            android.Manifest.permission.READ_EXTERNAL_STORAGE,
-            android.Manifest.permission.WRITE_EXTERNAL_STORAGE,
-            android.Manifest.permission.RECORD_AUDIO
-    };
-
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -82,8 +82,8 @@ public class VideoConfActivity extends AppCompatActivity implements EnxRoomObser
         //received when user connected with Enablex room
         Log.e("onRoomConnected", jsonObject.toString());
         this.mEnxRoom = enxRoom;
-        roomId=jsonObject.optJSONObject("room").optString("_id");
-        Log.e("roomId",roomId);
+        roomId = jsonObject.optJSONObject("room").optString("_id");
+        Log.e("roomId", roomId);
         mEnxRoom.publish(localStream);
         mEnxRoom.setReconnectObserver(this);
     }
@@ -181,6 +181,11 @@ public class VideoConfActivity extends AppCompatActivity implements EnxRoomObser
 
     @Override
     public void onUserDataReceived(JSONObject jsonObject) {
+
+    }
+
+    @Override
+    public void onUserStartTyping(boolean b) {
 
     }
 
@@ -305,6 +310,26 @@ public class VideoConfActivity extends AppCompatActivity implements EnxRoomObser
     }
 
     @Override
+    public void onStopAllSharingACK(JSONObject jsonObject) {
+
+    }
+
+    @Override
+    public void onACKStartLiveTranscription(JSONObject jsonObject) {
+
+    }
+
+    @Override
+    public void onACKStopLiveTranscription(JSONObject jsonObject) {
+
+    }
+
+    @Override
+    public void onTranscriptionEvents(JSONObject jsonObject) {
+
+    }
+
+    @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         switch (requestCode) {
@@ -346,7 +371,7 @@ public class VideoConfActivity extends AppCompatActivity implements EnxRoomObser
     private void initialize() {
         setView();
         enxRtc = new EnxRtc(this, this, this);
-        localStream = enxRtc.joinRoom(token, getPublisherInfo(), getReconnectInfo(),new JSONArray());
+        localStream = enxRtc.joinRoom(token, getPublisherInfo(), getReconnectInfo(), new JSONArray());
         quesTV.setText("Please wait.....");
     }
 
@@ -472,31 +497,31 @@ public class VideoConfActivity extends AppCompatActivity implements EnxRoomObser
         Log.e("OnCapturedView", bitmap.toString());
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         bitmap.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
-        byte[] byteArray = byteArrayOutputStream .toByteArray();
+        byte[] byteArray = byteArrayOutputStream.toByteArray();
 
-        JSONObject jsonObject=new JSONObject();
-        Log.e("Filename",roomId+"_snapshot.png");
+        JSONObject jsonObject = new JSONObject();
+        Log.e("Filename", roomId + "_snapshot.png");
         try {
-            jsonObject.put("data",Base64.encodeToString(byteArray, Base64.DEFAULT));
-            jsonObject.put("filename",roomId+"_snapshot.png");
+            jsonObject.put("data", Base64.encodeToString(byteArray, Base64.DEFAULT));
+            jsonObject.put("filename", roomId + "_snapshot.png");
 
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        new WebCall(this,this,jsonObject,WebConstants.uploadImageURL,WebConstants.uploadImageCode,false).execute();
+        new WebCall(this, this, jsonObject, WebConstants.uploadImageURL, WebConstants.uploadImageCode, false).execute();
     }
 
     @Override
     public void onWebResponse(String response, int callCode) {
-        Log.e("response",response);
-        switch (callCode){
+        Log.e("response", response);
+        switch (callCode) {
             case WebConstants.uploadImageCode:
                 try {
-                    JSONObject jsonObject=new JSONObject(response);
-                    if(jsonObject.optString("success").equalsIgnoreCase("true")){
-                        Log.e("Snapshot","done");
-                    }else{
-                        Log.e("Snapshot","Error occurred");
+                    JSONObject jsonObject = new JSONObject(response);
+                    if (jsonObject.optString("success").equalsIgnoreCase("true")) {
+                        Log.e("Snapshot", "done");
+                    } else {
+                        Log.e("Snapshot", "Error occurred");
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
