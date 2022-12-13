@@ -314,20 +314,6 @@ public class VideoConfActivity extends AppCompatActivity implements EnxRoomObser
 
     }
 
-    @Override
-    public void onACKStartLiveTranscription(JSONObject jsonObject) {
-
-    }
-
-    @Override
-    public void onACKStopLiveTranscription(JSONObject jsonObject) {
-
-    }
-
-    @Override
-    public void onTranscriptionEvents(JSONObject jsonObject) {
-
-    }
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
