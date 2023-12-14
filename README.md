@@ -1,10 +1,14 @@
-# Video KYC: A Sample Android App with EnableX Android Toolkit
+# Video KYC: An Android App with EnableX Android Toolkit
 
-This is a Sample Android Application that demonstrates the use of EnableX platform Server APIs (https://www.enablex.io/developer/video-api/server-api/) and Android Toolkit (https://www.enablex.io/developer/video-api/client-api/android-toolkit/) to build 1-to-1 RTC (Real Time Communication) Application.  It allows developers to ramp up on app development by hosting on their own devices. 
+Video KYC: A Sample Android App with EnableX Android Toolkit
 
-> EnableX Developer Center: https://developer.enablex.io/
+This is a Sample Android Application that demonstrates the use of EnableX platform Video APIs (https://www.enablex.io/developer/video-api/server-api/) and Android Toolkit (https://www.enablex.io/developer/video-api/client-api/android-toolkit/) to build 1-to-1 RTC (Real Time Communication) Application. It allows developers to ramp up on app development by hosting on their own devices.
+
+EnableX Developer Center: https://developer.enablex.io/
 
 This basic Video KYC Application is developed using Android (The EnableX Android Toolkit). Using Paid Subscription, the Application records Video Session.
+
+The details of the supported set of web browsers can be found here: https://www.enablex.io/developer/video/browser-compatibility-of-enablex-video/ 
 
 >The details of the supported set of web browsers can be found here:
 https://www.enablex.io/developer/video/browser-compatibility-of-enablex-video/
