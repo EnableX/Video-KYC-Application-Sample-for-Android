@@ -46,8 +46,6 @@ public class VideoConfActivity extends AppCompatActivity implements EnxRoomObser
     String roomId;
     String[] PERMISSIONS = {
             android.Manifest.permission.CAMERA,
-            android.Manifest.permission.READ_EXTERNAL_STORAGE,
-            android.Manifest.permission.WRITE_EXTERNAL_STORAGE,
             android.Manifest.permission.RECORD_AUDIO
     };
     private String token;
@@ -322,8 +320,7 @@ public class VideoConfActivity extends AppCompatActivity implements EnxRoomObser
             case 1:
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED
                         && grantResults[1] == PackageManager.PERMISSION_GRANTED
-                        && grantResults[2] == PackageManager.PERMISSION_GRANTED
-                        && grantResults[3] == PackageManager.PERMISSION_GRANTED) {
+                     ) {
                     initialize();
                 } else {
                     Toast.makeText(this, "Please enable permissions to further proceed.", Toast.LENGTH_SHORT).show();

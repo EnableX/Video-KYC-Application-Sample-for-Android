@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 33
+    compileSdkVersion 34
     defaultConfig {
         applicationId "com.enablex.remitonline"
         minSdkVersion 24
-        targetSdkVersion 33
+        targetSdkVersion 34
         versionCode 1
         versionName "1.1"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
@@ -38,5 +38,5 @@ dependencies {
     }
     implementation 'android.arch.lifecycle:extensions:1.1.1'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
-    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.8.0"
 }
