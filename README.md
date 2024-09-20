@@ -2,16 +2,16 @@
 
 Video KYC: A Sample Android App with EnableX Android Toolkit
 
-This is a Sample Android Application that demonstrates the use of EnableX platform Video APIs (https://www.enablex.io/developer/video-api/server-api/) and Android Toolkit (https://www.enablex.io/developer/video-api/client-api/android-toolkit/) to build 1-to-1 RTC (Real Time Communication) Application. It allows developers to ramp up on app development by hosting on their own devices.
+This is a Sample Android Application that demonstrates the use of EnableX platform Video APIs (https://developer.enablex.io/docs/references/apis/video-api/index/) and Android Toolkit (https://developer.enablex.io/docs/references/sdks/video-sdk/android-sdk/index/) to build 1-to-1 RTC (Real Time Communication) Application. It allows developers to ramp up on app development by hosting on their own devices.
 
 EnableX Developer Center: https://developer.enablex.io/
 
 This basic Video KYC Application is developed using Android (The EnableX Android Toolkit). Using Paid Subscription, the Application records Video Session.
 
-The details of the supported set of web browsers can be found here: https://www.enablex.io/developer/video/browser-compatibility-of-enablex-video/ 
+The details of the supported set of web browsers can be found here: https://developer.enablex.io/docs/quickstart/video/browser-compatibility/index
 
 >The details of the supported set of web browsers can be found here:
-https://www.enablex.io/developer/video/browser-compatibility-of-enablex-video/
+https://developer.enablex.io/docs/quickstart/video/browser-compatibility/index
 
 ## 1. Trial
 
@@ -89,15 +89,15 @@ Note the following:
 * Application Server is created using EnableX Server API, a Rest API Service helps in provisioning, session access and post-session reporting.  
 
 To know more about Server API, go to:
-https://www.enablex.io/developer/video-api/server-api
+https://developer.enablex.io/docs/references/apis/video-api/index/
 
 
 ## 4. Android Toolkit
 
 This Sample Applcation uses EnableX Android Toolkit to communicate with EnableX Servers to initiate and manage Real Time Communications. Please update your Application with latest version of EnableX Android Toolkit as and when a new release is available.
 
-* Documentation: https://www.enablex.io/developer/video-api/client-api/android-toolkit/
-* Download Toolkit: https://www.enablex.io/developer/video-api/client-api/android-toolkit/
+* Documentation: https://developer.enablex.io/docs/references/sdks/video-sdk/android-sdk/index/
+* Download Toolkit: https://developer.enablex.io/docs/references/sdks/video-sdk/android-sdk/index/
 
 ## 5. Demo
 
