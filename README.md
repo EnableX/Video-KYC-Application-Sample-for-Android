@@ -15,7 +15,7 @@ https://developer.enablex.io/docs/quickstart/video/browser-compatibility/index
 
 ## 1. Trial
 
-Sign up for a free trial https://portal.enablex.io/cpaas/trial-sign-up/ or try our multiparty video chat https://try.enablex.io/.
+Sign up for a free trial https://www.enablex.io/free-trial/ or try our multiparty video chat https://try.enablex.io/.
 
 ## 2. How to get started
 
@@ -23,7 +23,7 @@ Sign up for a free trial https://portal.enablex.io/cpaas/trial-sign-up/ or try o
 
 #### 2.1.1 App Id and App Key 
 
-* Register with EnableX [https://portal.enablex.io/cpaas/trial-sign-up/] 
+* Register with EnableX [https://www.enablex.io/free-trial/] 
 * Create your Application
 * Get your App ID and App Key delivered to your email
 
@@ -78,7 +78,7 @@ Once you tried EnableX Android Sample Application, you may need to setup your ow
     
 ## 3. Setup Your Own Application Server
 
-You may need to setup your own Application Server after you tried the Sample Application with EnableX hosted Server. We have differnt variants of Appliciation Server Sample Code. Pick one in your preferred language and follow instructions given in respective README.md file.
+You may need to setup your own Application Server after you tried the Sample Application with EnableX hosted Server. We have different variants of Application Server Sample Code. Pick one in your preferred language and follow instructions given in respective README.md file.
 
 * NodeJS: [https://github.com/EnableX/Video-Conferencing-Open-Source-Web-Application-Sample.git]
 * PHP: [https://github.com/EnableX/Group-Video-Call-Conferencing-Sample-Application-in-PHP]
@@ -89,7 +89,7 @@ Note the following:
 * Application Server is created using EnableX Server API, a Rest API Service helps in provisioning, session access and post-session reporting.  
 
 To know more about Server API, go to:
-https://developer.enablex.io/docs/references/apis/video-api/index/
+https://developer.enablex.io/docs/guides/video-guide/sample-codes/video-calling-app/#demo-application-server
 
 
 ## 4. Android Toolkit
@@ -104,4 +104,4 @@ This Sample Applcation uses EnableX Android Toolkit to communicate with EnableX 
 EnableX provides hosted Vemo Application of different use-case for you to try out.
 
 1. Try a quick Video Call: https://demo.enablex.io/
-2. Sign up for a free trial https://portal.enablex.io/cpaas/trial-sign-up/
+2. Sign up for a free trial https://www.enablex.io/free-trial/
