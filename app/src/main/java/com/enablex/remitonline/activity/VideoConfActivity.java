@@ -178,24 +178,42 @@ public class VideoConfActivity extends AppCompatActivity implements EnxRoomObser
     }
 
     @Override
+    public void onACKSendMessage(JSONObject jsonObject) {
+
+    }
+
+    @Override
+    public void onMessageDelete(JSONObject jsonObject) {
+
+    }
+
+    @Override
+    public void onACKDeleteMessage(JSONObject jsonObject) {
+
+    }
+
+    @Override
+    public void onMessageUpdate(JSONObject jsonObject) {
+
+    }
+
+    @Override
+    public void onACKUpdateMessage(JSONObject jsonObject) {
+
+    }
+
+    @Override
     public void onUserDataReceived(JSONObject jsonObject) {
 
     }
 
     @Override
-    public void onUserStartTyping(boolean b) {
+    public void onUserStartTyping(JSONObject jsonObject) {
 
     }
 
-    @Override
-    public void onSwitchedUserRole(JSONObject jsonObject) {
-        // received when user switch their role (from moderator  to participant)
-    }
 
-    @Override
-    public void onUserRoleChanged(JSONObject jsonObject) {
-// received when user role changed successfully
-    }
+
 
     @Override
     public void onConferencessExtended(JSONObject jsonObject) {
@@ -336,11 +354,10 @@ public class VideoConfActivity extends AppCompatActivity implements EnxRoomObser
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.nextTV:
+            if(v.getId()== R.id.nextTV){
                 count++;
                 onNextClick(count);
-                break;
+
         }
     }
 

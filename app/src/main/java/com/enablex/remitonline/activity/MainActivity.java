@@ -41,10 +41,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.startTV:
+            if(v.getId()== R.id.startTV){
                 getRoomWebCall();
-                break;
+
         }
     }
 
